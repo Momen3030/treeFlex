@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/treeflexmap.esm.js"></script>
+    <script nomodule src="/build/treeflexmap.js"></script>
+</head>
+
+<body>
+    <script>
+        const component = document.createElement('treeflex-map');
+        component.setAttribute('content', JSON.stringify({
+            attributes: {
+                parent: "parent",
+                nodeColor: "black",
+                textColor: "red",
+                nodeLevelTwoNumber: 3,
+                levelTwo: ["one", "two", "three", "Four"],
+                nodeLevelTwoFirstNumber: 4,
+                levelTwoFirst: ["l21", "l212", "l213", "l214", "l215"],
+                nodeLevelTwoSecondNumber: 4,
+                levelTwoSecond: ["l22", "l222", "l223", "l224", "l225"],
+                nodeLevelThreeFirstNumber: 2,
+                levelThreeFirst: ["l31", "l31", "l33", "l34", "l35"],
+                nodeLevelThreeFirstSecondNumber: 2,
+                levelThreeFirstSecond: ["l321", "l322", "l323"],
+                nodeLevelThreeSecondFirstNumber: 2,
+                levelThreeSecondFirst: ["l313", "l313", "l333", "l343", "l353"],
+                nodeLevelThreeSecondSecondNumber: 2,
+                levelThreeSecondSecond: ["l321", "l322", "l323", "l34", "l35"]
+
+
+            }
+        }));
+        document.body.appendChild(component);
+    </script>
+
+
+
+
+
+</body>
+
+</html>
